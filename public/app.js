@@ -1,4 +1,4 @@
-const BACKEND = 'https://your-backend.up.railway.app'; // <-- GANTI INI setelah deploy
+const API_BASE = "https://nice2earn-production.up.railway.app";
 const tg = window.Telegram?.WebApp;
 if (tg) tg.expand();
 
