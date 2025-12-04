@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Verifikasi Mandatory</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header"><h1>Syarat Wajib</h1></header>
+    <main>
+      <p>Silakan install Nicegram lewat link referral dan masukkan kode promo untuk melanjutkan.</p>
+      <a id="installLink" class="btn" target="_blank">Install Nicegram</a>
+      <div style="margin-top:12px;">
+        <input id="promoInput" placeholder="Masukkan kode promo" />
+        <button onclick="verifyMandatory()">Verify</button>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
