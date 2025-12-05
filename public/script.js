@@ -3,6 +3,14 @@ const BACKEND_URL = "https://nice2earn-production.up.railway.app";
 const tg = window.Telegram.WebApp;
 tg.expand();
 
+// Initialize Vercel Speed Insights (client-side only)
+if (typeof window !== 'undefined') {
+  // Attempt to load Speed Insights if available
+  if (window.si !== undefined && typeof window.si === 'function') {
+    window.si('event', 'page_view');
+  }
+}
+
 document.getElementById('connectBtn').onclick = connectTONWallet;
 
 async function connectTONWallet() {
