@@ -1,0 +1,71 @@
+body {
+  background: #0E0E1A;
+  color: #F0F6FF;
+  font-family: Arial, sans-serif;
+  padding: 15px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(90deg,#7B4DFF,#00E1FF,#FF4DF0);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #29FF86;
+}
+
+.balance-box {
+  padding: 12px;
+  margin-top: 15px;
+  background: #1a1c2e;
+  border-radius: 10px;
+  border: 1px solid #7B4DFF;
+  text-align: center;
+  font-size: 18px;
+}
+
+.task-card {
+  background: #1a1c2e;
+  border: 1px solid #00E1FF;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+.btn {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background: #00E1FF;
+  color: #0E0E1A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-outline {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid #FF4DF0;
+  border-radius: 10px;
+  color: #FF4DF0;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
