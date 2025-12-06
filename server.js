@@ -9,9 +9,15 @@ const User = require('./models/User');
 const Task = require('./models/Task');
 const Transaction = require('./models/Transaction');
 
+const path = require("path");
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+
+// Serve TON Manifest
+app.get('/tonconnect-manifest.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'tonconnect-manifest.json'));
+});
 
 // Connect MongoDB
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser:true, useUnifiedTopology:true })
